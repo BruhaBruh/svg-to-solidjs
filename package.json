@@ -1,11 +1,11 @@
 {
   "name": "svg-to-solidjs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "SVG converter to solidjs",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "example": "node ./index.js convert input/ output",
+    "start": "node ./index.js convert input/ output/",
     "help": "node ./index.js --help"
   },
   "dependencies": {
