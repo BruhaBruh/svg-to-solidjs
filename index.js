@@ -73,25 +73,3 @@ yargs(hideBin(process.argv))
     choices: ["tsx", "jsx"],
   })
   .parse();
-
-/**
- * import glob
-import re
-
-toTSXFiles = []
-
-for file in files:
-    name = pascal_case(file.split("/")[-1].split(".")[0])
-    f = open(file, "r")
-    content = f.readline()
-    f.close()
-    svg = re.sub(r'class=\"[a-zA-Z0-9- ]+\"', "viewBox=\"0 0 24 24\" {...props}", content)
-    toTSXFiles.append(f"export * from \"./icon{name}.tsx\";")
-    f = open(f"./tsx/icon{name}.tsx", "w")
-    f.write("\r\n".join(["import { Component, ComponentProps } from \"solid-js\";", "", f"export const Icon{name}: Component<ComponentProps<\"svg\">> = (props) => (", svg, ");"]))
-    f.close()
-
-f = open("./index.ts", "w")
-f.write("\r\n".join(toTSXFiles))
-f.close()
- */
